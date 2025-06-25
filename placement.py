@@ -10,7 +10,7 @@ import pickle
 import streamlit as st
 from xgboost import XGBRegressor
 
-loaded_model = pickle.load(open('/home/uday/intership sav/placement.sav', 'rb'))
+loaded_model = pickle.load(open('placement.sav', 'rb'))
 
 def predict(input_data):
     input_array = np.asarray(input_data).reshape(1, -1)
